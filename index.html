@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freate — Tự do & Sáng tạo vì cộng đồng</title>
+  <meta name="description" content="Freate là tổ chức mã nguồn mở Việt Nam — Tự do (Free) + Sáng tạo (Create) — với các dự án Freate Diary, Freate Drop và FreateOJ.">
+  <meta property="og:title" content="Freate — Tự do & Sáng tạo">
+  <meta property="og:description" content="Sáng tạo vì cộng đồng — Các dự án mã nguồn mở từ Việt Nam">
+  <meta property="og:url" content="https://freate.io.vn">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2563eb">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="cursor-follower"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none">
+          <rect width="64" height="64" rx="16" fill="url(#logo-grad)"/>
+          <path d="M18 16h12l-4 12h8l-14 20 2-16h-8z" fill="#fff" opacity="0.95"/>
+          <defs><linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#7c3aed"/>
+          </linearGradient></defs>
+        </svg>
+        <span class="logo-text">Freate <small>VIETNAM</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#features">Đặc điểm</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-sphere gs1"></div>
+      <div class="gradient-sphere gs2"></div>
+      <div class="gradient-sphere gs3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Mã nguồn mở — Việt Nam</div>
+      <h1>Sáng tạo vì <span class="gradient-text">cộng đồng</span></h1>
+      <p><strong>Freate</strong> — nơi <em>Tự do</em> (Free) gặp <em>Sáng tạo</em> (Create). Chúng tôi xây dựng những sản phẩm mã nguồn mở chất lượng, an toàn và dễ tiếp cận cho tất cả mọi người.</p>
+      <p class="hero-founder">Sáng lập bởi <a href="https://github.com/nomoka-vietnam/" target="_blank" rel="noopener">Nguyễn Minh Khôi</a></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Khám phá dự án</a>
+        <a href="https://github.com/freatevietnam" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <span>Cuộn xuống</span>
+        <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Về chúng tôi</span>
+        <h2>Freate là gì?</h2>
+        <p><strong>Freate</strong> = <strong>Free</strong> (Tự do) + <strong>Create</strong> (Sáng tạo). Chúng tôi là những kỹ sư phần mềm, sinh viên và những người đam mê công nghệ tại Việt Nam, cùng nhau xây dựng các sản phẩm mã nguồn mở phục vụ cộng đồng.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-aos>
+          <div class="about-icon vision">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Tầm nhìn</h3>
+          <p>Trở thành tổ chức mã nguồn mở hàng đầu Việt Nam, tạo ra những công cụ công nghệ đẳng cấp quốc tế.</p>
+        </div>
+        <div class="about-card" data-aos>
+          <div class="about-icon mission">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Sứ mệnh</h3>
+          <p>Xây dựng phần mềm an toàn, hiệu quả và miễn phí cho tất cả mọi người, bất kể hoàn cảnh hay vị trí địa lý.</p>
+        </div>
+        <div class="about-card" data-aos>
+          <div class="about-icon values">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Giá trị</h3>
+          <p>Mã nguồn mở, bảo mật là ưu tiên hàng đầu, đặt người dùng làm trung tâm và không ngừng đổi mới.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Dự án</span>
+        <h2>Các sản phẩm của chúng tôi</h2>
+        <p>Những dự án mã nguồn mở được xây dựng với tình yêu công nghệ và khát vọng phục vụ cộng đồng.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-aos>
+          <div class="project-img">
+            <div class="project-icon diary-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                <path d="M12 6v7"/><path d="M9 9l3-3 3 3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag rust">Rust</span>
+              <span class="tag encrypt">AES-256-GCM</span>
+            </div>
+            <h3>Freate Diary</h3>
+            <p>Nhật ký điện tử được mã hóa đầu cuối với bảo mật quân sự. Tính năng theo dõi tâm trạng, mốc sự kiện, tìm kiếm và kho tập tin an toàn.</p>
+            <ul class="project-features">
+              <li>Mã hóa AES-256-GCM phần cứng</li>
+              <li>Chế độ tối / sáng</li>
+              <li>Markdown + MathJax + Highlight.js</li>
+              <li>Cập nhật trực tiếp qua SSE</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/freatevietnam/freatediary" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+              <a href="https://github.com/freatevietnam/freatediary#readme" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Docs</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos>
+          <div class="project-img">
+            <div class="project-icon drop-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <line x1="8" y1="9" x2="16" y2="9"/><line x1="12" y1="13" x2="16" y2="13"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag python">Python</span>
+              <span class="tag rust">Rust</span>
+              <span class="tag feature">Markdown</span>
+            </div>
+            <h3>Freate Drop</h3>
+            <p>Chia sẻ Markdown tức thì — không cần đăng nhập. Biên tập trực quan với xem trước, tô sáng cú pháp và kết xuất toán học.</p>
+            <ul class="project-features">
+              <li>Hoàn toàn ẩn danh (cookie mã hóa)</li>
+              <li>Bảo vệ bằng mật khẩu tùy chọn</li>
+              <li>URL rút gọn, xem đầy đủ, in ấn</li>
+              <li>Chế độ tối và phím tắt</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/freatevietnam/freatedrop" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Python
+              </a>
+              <a href="https://github.com/freatevietnam/freatedrop-rust" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Rust
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos>
+          <div class="project-img">
+            <div class="project-icon oji-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+                <line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag python">Python</span>
+              <span class="tag django">Django</span>
+              <span class="tag feature">56+ Lang</span>
+            </div>
+            <h3>FreateOJ</h3>
+            <p>Online Judge chính thức cho các kỳ thi lập trình của Freate. Hỗ trợ 56+ ngôn ngữ lập trình với hệ thống chấm bài Docker an toàn.</p>
+            <ul class="project-features">
+              <li>56+ ngôn ngữ lập trình</li>
+              <li>Toán học LaTeX với MathJax 3</li>
+              <li>Định dạng thi IOI, ICPC, tùy chỉnh</li>
+              <li>Cập nhật thời gian thực qua Socket.IO</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/freatevietnam/freateoj" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Source Code
+              </a>
+              <a href="https://oj.freate.io.vn" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                oj.freate.io.vn
+              </a>
+              <a href="https://freatevietnam.github.io/freateoj-docs/" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Docs</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Đặc điểm nổi bật</span>
+        <h2>Tại sao chọn Freate?</h2>
+        <p>Cam kết của chúng tôi đối với chất lượng và sự minh bạch.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-blue"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Mã nguồn mở</h3>
+          <p>100% mã nguồn mở trên GitHub. Minh bạch, có thể kiểm tra và đóng góp bởi cộng đồng.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-purple"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Bảo mật hàng đầu</h3>
+          <p>Mã hóa AES-256-GCM, xác thực Argon2id — bảo vệ dữ liệu của bạn ở mức cao nhất.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-cyan"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+          <h3>Hiệu suất cao</h3>
+          <p>Xây dựng bằng Rust và Python với kiến ​​trúc tối ưu, tiêu thụ tài nguyên thấp nhất.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-green"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+          <h3>Trải nghiệm tuyệt vời</h3>
+          <p>Giao diện đẹp, thân thiện với người dùng, hỗ trợ đầy đủ chế độ tối và responsive.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-orange"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+          <h3>Người dùng làm trung tâm</h3>
+          <p>Sản phẩm được thiết kế dựa trên phản hồi thực tế từ cộng đồng người dùng Việt Nam.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon fi-red"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Cập nhật liên tục</h3>
+          <p>Phát triển và cải tiến không ngừng với các bản vá lỗi và tính năng mới thường xuyên.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos>
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Dự án</span>
+        </div>
+        <div class="stat-item" data-aos>
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-label">% Mã nguồn mở</span>
+        </div>
+        <div class="stat-item" data-aos>
+          <span class="stat-number" data-target="56">0</span>
+          <span class="stat-label">Ngôn ngữ lập trình</span>
+        </div>
+        <div class="stat-item" data-aos>
+          <span class="stat-number plus" data-target="2026">0</span>
+          <span class="stat-label">Năm thành lập</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Liên hệ</span>
+        <h2>Kết nối với chúng tôi</h2>
+        <p>Hãy tham gia cùng chúng tôi trên hành trình xây dựng một cộng đồng mã nguồn mở Việt Nam vững mạnh.</p>
+      </div>
+      <div class="contact-grid" data-aos>
+        <a href="https://github.com/freatevietnam" target="_blank" rel="noopener" class="contact-card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <h3>GitHub</h3>
+          <p>@freatevietnam</p>
+        </a>
+        <a href="mailto:freatevietnam@gmail.com" class="contact-card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <h3>Email</h3>
+          <p>freatevietnam@gmail.com</p>
+        </a>
+        <a href="https://discord.com/invite/fC3kG3hQyn" target="_blank" rel="noopener" class="contact-card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+          <h3>Discord</h3>
+          <p>Tham gia máy chủ</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" rx="16" fill="url(#fog)"/>
+            <path d="M18 16h12l-4 12h8l-14 20 2-16h-8z" fill="#fff" opacity="0.95"/>
+            <defs><linearGradient id="fog" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient></defs>
+          </svg>
+          <span>Freate</span>
+        </div>
+        <p class="footer-desc">Mã nguồn mở — Sáng tạo vì cộng đồng</p>
+        <div class="footer-links">
+          <a href="https://github.com/freatevietnam" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:freatevietnam@gmail.com">Email</a>
+          <a href="https://discord.com/invite/fC3kG3hQyn" target="_blank" rel="noopener">Discord</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Freate. Mã nguồn mở theo giấy phép MIT & AGPL.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

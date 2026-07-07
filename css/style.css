@@ -196,6 +196,88 @@ ul { list-style: none; }
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* ========== MESSAGE BANNER ========== */
+.message-banner {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  animation: messageSlideDown .4s ease-out;
+}
+
+.message-banner.info {
+  background: var(--blue-50);
+  border-bottom: 1px solid var(--blue-200);
+}
+
+.message-banner.warn {
+  background: #fffbeb;
+  border-bottom: 1px solid #fde68a;
+}
+
+.message-banner.error {
+  background: #fef2f2;
+  border-bottom: 1px solid #fecaca;
+}
+
+@keyframes messageSlideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.message-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.message-banner-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.message-banner.info .message-banner-icon { color: var(--blue-600); }
+.message-banner.warn .message-banner-icon { color: #d97706; }
+.message-banner.error .message-banner-icon { color: #dc2626; }
+
+.message-banner-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.message-banner.info .message-banner-text { color: var(--blue-800); }
+.message-banner.warn .message-banner-text { color: #92400e; }
+.message-banner.error .message-banner-text { color: #991b1b; }
+
+.message-banner-close {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.message-banner.info .message-banner-close { color: var(--blue-500); }
+.message-banner.warn .message-banner-close { color: #d97706; }
+.message-banner.error .message-banner-close { color: #dc2626; }
+
+.message-banner.info .message-banner-close:hover { background: var(--blue-100); color: var(--blue-700); }
+.message-banner.warn .message-banner-close:hover { background: #fef3c7; color: #b45309; }
+.message-banner.error .message-banner-close:hover { background: #fee2e2; color: #b91c1c; }
+
 /* ========== HERO ========== */
 .hero {
   min-height: 100vh;

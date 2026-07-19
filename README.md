@@ -1,60 +1,47 @@
-# Freate
+# Freate Vietnam Landing Page
 
-> **Free** + **Create** — where freedom meets creativity.
+> **Free** + **Create** — Where freedom meets creativity.
 
-The official landing page for the Freate open-source organization, hosted at **freate.io.vn**.
+The official landing page repository for **Freate Vietnam** open-source organization, hosted live at **[freate.io.vn](https://freate.io.vn)**.
 
-## About
+## About Freate
 
-Freate is a Vietnamese open-source organization founded by **Nguyễn Minh Khôi**, building high-quality, secure, and accessible technology products.
+Freate is a Vietnamese open-source technology organization founded by **Nguyễn Minh Khôi**, dedicated to developing high-performance, secure, and accessible software tools for everyone.
 
-### Projects
+### Member Projects
 
-| Project | Description | Tech Stack |
-|---------|-------------|------------|
-| [Freate Diary](https://github.com/freatevietnam/freatediary) | AES-256-GCM encrypted diary | Rust, Actix-web, SQLite |
-| [Freate Drop](https://github.com/freatevietnam/freatedrop) | Anonymous Markdown sharing | Python/Django & Rust/Actix |
-| [FreateOJ](https://github.com/freatevietnam/freateoj) | Online Judge — 56+ languages | Python/Django, Docker |
+| Project | Description | Tech Stack | Repository |
+|---|---|---|---|
+| **Freate Diary** | End-to-end encrypted digital diary | Rust, Actix-web, SQLite, Hardware AES-256-GCM | [freatediary](https://github.com/freatevietnam/freatediary) |
+| **Freate Drop** | Instant anonymous Markdown sharing | Python/Django & Rust/Actix-Web, Fernet/AES-256-GCM | [freatedrop](https://github.com/freatevietnam/freatedrop) / [freatedrop-rust](https://github.com/freatevietnam/freatedrop-rust) |
+| **FreateOJ** | Online Judge platform supporting 56+ languages | Python/Django, Docker Sandbox, Socket.IO | [freateoj](https://github.com/freatevietnam/freateoj) |
+| **FreateOJ Wiki Builder** | Cross-platform Desktop GUI Wiki bundler | Rust, egui, SQLite, htmx | [freateoj-buildwiki](https://github.com/freatevietnam/freateoj-buildwiki) |
+| **FreateOJ Docs** | Official Online Judge documentation | Static HTML, CSS | [freateoj-docs](https://freatevietnam.github.io/freateoj-docs/) |
 
-## Stack
+## Tech Stack
 
-- Pure HTML5 / CSS3 / JavaScript (no frameworks)
-- Google Fonts (Inter)
-- Gradient animations, scroll reveal, counter animation
+- Native HTML5 / CSS3 (Custom Properties & Glassmorphism) / Vanilla ES6 JS
+- Google Fonts (Inter & JetBrains Mono)
+- URL Query Parameter Toast Alert System (`?message=...&messagetype=...`)
+- Dark & Light theme switcher
 
-## Structure
-
-```
-freate/
-├── index.html
-├── favicon.svg
-├── logo.svg
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── SECURITY.md
-└── .gitignore
-```
-
-## Development
+## Local Development
 
 ```bash
 git clone https://github.com/freatevietnam/freate.git
 cd freate
 
+# Run a local web server
 python3 -m http.server 8000
 # or
 npx serve .
 ```
 
-## Contributing
+Then visit `http://localhost:8000`.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+To test the URL notification alert feature:
+`http://localhost:8000/?message=Test+Notice&messagetype=error`
 
 ## License
 
-MIT © 2026 Freate
+MIT © 2026 Freate Vietnam
